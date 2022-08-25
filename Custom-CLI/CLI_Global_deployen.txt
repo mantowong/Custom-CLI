@@ -1,0 +1,5 @@
+Problem: Eingabe von 'node index.js input', um mit CLI zu arbeiten
+L”sung: In package.json unter  Property "bin" eine Property erstellen mit "ClI": "index.js"
+	Dann 'npm i -g', um PATH variable anzulegen, sodass man im Terminal 'CLI Input' schreiben kann
+Quelle: https://cheatcode.co/tutorials/how-to-build-a-command-line-interface-cli-using-node-js
+Beispiel: "manto joke"

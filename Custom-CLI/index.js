@@ -21,10 +21,15 @@ const { clear, debug } = flags;
 	input.includes(`help`) && cli.showHelp(0);
 	debug && log(flags);
 
-if(input.includes('affirmation')) {
-	const res = await axio.get('https://www.affirmations.dev/');
-	console.log(res.data.affirmation)
+if(input.includes('joke')) {
+	const res = await axios.get('https://api.chucknorris.io/jokes/random');
+	console.log(res.data.value)
  ;
+}
+
+if(input.includes('affirmation')) {
+	const res = await axios.get('https://www.affirmations.dev/');
+	console.log(res.data.affirmation)
 }
 })();
 
