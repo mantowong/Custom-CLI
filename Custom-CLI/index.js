@@ -27,7 +27,7 @@ var music = "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.191.824.0_
 var code = "C:\\Program Files\\Microsoft VS Code\\code.exe";
 var ff = "C:\\Program Files\\Mozilla Firefox\\firefox.exe";
 var abap = "C:\\Users\\man-t\\Documents\\eclipse-java-2022-06-R-win32-x86_64\\eclipse\\eclipse.exe";
-var note = "C:\\Windows\\System32\\note.exe"; 
+
 
 
 
@@ -158,15 +158,6 @@ if(input.includes('abap')) {
 		});
 	}
 
-if(input.includes('note')) {
-		child(note, function(err, data) {
-			if(err){
-			   console.error(err);
-			   return;
-			}
-			console.log(data.toString());
-		});
-	}
 })();
 
 
